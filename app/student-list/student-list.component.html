@@ -1,0 +1,18 @@
+<h3>students array:</h3>
+<!-- <ul>
+    <li *ngFor="let student of students">
+        {{student.id}}:{{student.first_name}} {{student.last_name}}
+    </li>
+</ul> -->
+<ul class="list-group">
+    <li *ngFor="let student of students" class="list-group-item">
+        <p><strong>ID:</strong> {{student.id}}</p>
+        <p><strong>שם פרטי:</strong> {{student.first_name}}</p>
+        <p><strong>שם משפחה:</strong> {{student.last_name}}</p>
+        <p><strong>כתובת:</strong> {{student.adrress}}</p>
+        <p><strong>טלפון:</strong> {{student.phone}}</p>
+        <p><strong>סטטוס:</strong> {{student.is_active ? 'פעיל' : 'לא פעיל'}}</p>
+        <p><strong>ממוצע ציונים:</strong> {{student.marks_avg}}</p>
+        <button (click)="deleteStudent(student)">Delete Student</button>
+    </li>
+</ul>
